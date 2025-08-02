@@ -1,33 +1,47 @@
-// Import react library //
-import React from "react"
-// Import component files //
-import Header from "./header"
-import NavBar from "./navBar"
-import Footer from "./footer"
+import styled from 'styled-components';
+import Footer from "./footer";
+import About from "../pages/about"
 
-const Layout = ({children}) => {
+const MainWrapper = styled.main`
+
+padding: 20px;
+`;
+
+const pages = [
+  {key:"about", 
+  value: "About"
+}, {
+  key:"projects",
+  value: "Projects"
+}, {
+  key:"technologies",
+  value: "Technologies"
+}];
+
+const Layout = ({ children, chosenPage, choosePage }) => {
+
+const selectPage = () => {
+  return (
+    pages.map((page) => {
+      <li key={pages.key} 
+      onClick={() => choosePage(page.key)}
+      >{pages.value}</li>
+    }))
+  }
+
     return (
-        <>
-        <div>
-            {children}
-        </div>
-        </>
-    )
-}
+      <>
+      <ul>
+        {selectPage()}
+      </ul>
+      <MainWrapper>
+        {children}
+        <Footer></Footer>
+      </MainWrapper>
+      </>
+    );
+  };
 
-const styles = {
-    wrapAbout: {
-        display:"flex",
-        flexDirection:"column",
-        justifyContent:"center",
-        padding:"10px",
-    },
-    headShot: {
-        width:"100px",
-        height:"100px",
-        border:"solid",
-        borderRadius:"5px",
-    }
-}
-    
+  
+
 export default Layout;

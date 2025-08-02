@@ -1,16 +1,21 @@
-// src/App.jsx
 import React from 'react';
-import About from './pages/about.jsx';
-import Layout from './components/layout.jsx';
+import { useState } from "react";
+import About from './pages/about';
+import Projects from './pages/projects';
+import Technologies from './pages/technologies';
+import Layout from './components/layout';
 
 const App = () => {
+
+const [onPage, nextPage] = useState('about');
+
   return (
     <>
-    <div>
-      <h1>hello</h1>
-    </div>
-    <Layout>
-      <About />
+    <Layout chosenPage={onPage} choosePage={nextPage}>
+      {onPage === 'about' && <About></About>}
+      {onPage === 'projects' && <Projects></Projects>}
+      {onPage === 'technologies' && <Technologies></Technologies>}
+
     </Layout>
     </>
   );
