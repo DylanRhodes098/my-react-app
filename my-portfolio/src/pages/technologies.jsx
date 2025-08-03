@@ -1,5 +1,12 @@
 import styled from "styled-components"
 
+const WRAPPER = styled.section `
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-bottom: 50px;
+`;
+
 const TECHNOLOGIESBODY = styled.div`
 display:flex;
 flex-direction:row;
@@ -10,6 +17,7 @@ padding:20px;`
 const Technologies = () => {
     return (
     <>
+    <WRAPPER>
     <div classname="technologiesHeader">
         <h1>Technologies</h1>
         <p>I've worked with a range of technologies in the web development world</p>
@@ -39,6 +47,7 @@ const Technologies = () => {
         </ul>
         </div>
         </TECHNOLOGIESBODY>
+        </WRAPPER>
     </>
     )
 }

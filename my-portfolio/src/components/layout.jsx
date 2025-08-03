@@ -1,10 +1,19 @@
 import styled from 'styled-components';
 import Footer from "./footer";
-import About from "../pages/about"
+import GlobalStyle from '../styles/globalStyles';
 
 const MainWrapper = styled.main`
+  padding: 20px;
 
-padding: 20px;
+`;
+
+const WRAPNAV = styled.nav `
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  cursor:pointer;
 `;
 
 const pages = [
@@ -21,19 +30,20 @@ const pages = [
 const Layout = ({ children, chosenPage, choosePage }) => {
 
 const selectPage = () => {
-  return (
-    pages.map((page) => {
-      <li key={pages.key} 
+  return pages.map((page) => {
+    return (
+      <p key={page.key} 
       onClick={() => choosePage(page.key)}
-      >{pages.value}</li>
-    }))
+      >{page.value}</p>
+  )})
   }
 
     return (
       <>
-      <ul>
+      <GlobalStyle />
+      <WRAPNAV>
         {selectPage()}
-      </ul>
+      </WRAPNAV>
       <MainWrapper>
         {children}
         <Footer></Footer>

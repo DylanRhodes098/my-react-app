@@ -11,21 +11,21 @@ align-items:space-between;
 justify-content:flex-start;
 `
 
-const ProjectCards = () => {
+const ProjectCards = (props) => {
     return (
         <>
         
         <CARDBORDER>
         <div className="image">
-        <img src="#" alt="Project image here"/>
+        <img src={props.img} alt="Project image here"/>
         </div>
         <div className="projectText">
-            <h1>Project title</h1>
-            <p>Project description</p>
+            <h1>{props.title}</h1>
+            <p>{props.description}</p>
         </div>
         <div className="buttonClick">
-            <button>View Code</button>
-            <button>View Project</button>
+            <button>{props.codeurl}</button>
+            <button>{props.projecturl}</button>
         </div>
         </CARDBORDER>
         
