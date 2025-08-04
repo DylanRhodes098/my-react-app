@@ -30,7 +30,7 @@ const Projects = () => {
         </div>
         <CARDWRAP>
         <ProjectCards
-            img= "../public/weatherDashboard.jpeg"
+            img= "/weatherDashboard.jpeg"
             title="Weather Dashboard"
             description="The objective was to create a weather dashboard that integrated an API to fetch weather data in response to a location input.
 
