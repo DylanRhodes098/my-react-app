@@ -22,6 +22,23 @@ const ProjectObject = [{
     description:"A fully responsive e-commerce website for a fictional clothing brand, built using HTML, CSS and Bootstrap. The website showcases modern clothing products with a clean design, intuitive navigation, and basic cart functionality.",
     projecturl:"https://dylanrhodes098.github.io/bootstrap-webpage/",
     codeurl:"https://github.com/DylanRhodes098/bootstrap-webpage.git",
-}];
+},{
+    img:"/toDoList.jpeg",
+    title:"Interactive To-Do List",
+    description:"A simple and responsive to-do list app built using HTML, CSS, and JavaScript. This project helps users add, complete, delete, and manage their tasks efficiently in a clean interface — ideal for learning DOM manipulation, event handling, and UI interactivity.",
+    projecturl:"https://dylanrhodes098.github.io/todo-list/",
+    codeurl:"https://github.com/DylanRhodes098/todo-list.git",
+},{
+    img:"/multiPage.jpeg",
+    title:"Multi-Page Website",
+    description:"A responsive 4-page website for a fictional gym and fitness center. The site showcases services, membership options, and contact information, designed to attract new members and promote a healthy lifestyle.",
+    projecturl:"",
+    codeurl:"https://github.com/DylanRhodes098/multipage-website.git",
+}
+
+
+
+
+];
 
 export default ProjectObject;
