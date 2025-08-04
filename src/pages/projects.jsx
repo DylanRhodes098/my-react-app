@@ -39,21 +39,21 @@ We started this task by assigning relevant duties to team members, utlising each
 "
             projecturl="https://dylanrhodes098.github.io/iWeather.io/"
             codeurl="https://github.com/DylanRhodes098/iWeather.io.git"/>
-        <ProjectCards img= "../public/notesApp.jpeg"
+        <ProjectCards img= "/notesApp.jpeg"
             title="Notes Application"
             description="An interactive note taking application that allows users to create, read, update and delet notes. Users notes are stored in a data base which can also be edited.
 
 "
             projecturl="https://notes-application-i7v1.onrender.com"
             codeurl="https://github.com/DylanRhodes098/notes-application.git"/>
-        <ProjectCards img= "../public/readMeGen.jpeg"
+        <ProjectCards img= "/readMeGen.jpeg"
             title="README Generator"
             description="Seamlessly generates a Readme file for developers to use on their projects. After successfully following the installation instructions. Navigate to the file 'main.py', and run in the terminal 'python3 main.py'. Answer each prompt as you wish.
 
 "
             projecturl="https://youtu.be/XEr8hqPsQIA"
             codeurl="https://github.com/DylanRhodes098/readme-generator.git"/>
-        <ProjectCards img= "../public/bootStrapWeb.jpeg"
+        <ProjectCards img= "/bootStrapWeb.jpeg"
             title="Bootstrap E-commerce Homepage"
             description="A fully responsive e-commerce website for a fictional clothing brand, built using HTML, CSS and Bootstrap. The website showcases modern clothing products with a clean design, intuitive navigation, and basic cart functionality.
 

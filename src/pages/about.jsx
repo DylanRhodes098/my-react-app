@@ -42,7 +42,7 @@ const About = () => {
         <p>
           I strive to create software with <br></br> the user in mind using cutting-edge technologies, <br></br>innovating, and crafting elegant user experiences.
         </p>
-        <a href="../public/softwarecv.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/softwarecv.pdf" target="_blank" rel="noopener noreferrer">
         <button>CV</button></a>
       </ABOUTHEADER>
 
@@ -58,7 +58,7 @@ const About = () => {
         </ABOUTBODY>
 
         <HeadShot>
-        <img className="aboutImage" src="../public/portfolioImg.jpeg" alt="Project image here"/>
+        <img className="aboutImage" src="/portfolioImg.jpeg" alt="Project image here"/>
         </HeadShot>
       </WRAPABOUT>
       </WRAPPER>

@@ -47,10 +47,10 @@ const Footer = () => {
             </CONTACTSWRAP>
             <SOCIALSWRAP>
             <LINKEDIN>
-                <a className="contact" href="https://www.linkedin.com/in/dylan-rhodes-58a8a1263/"><img className="contact" src="../public/linkedin.jpeg" height="30px" width="30px"/></a>
+                <a className="contact" href="https://www.linkedin.com/in/dylan-rhodes-58a8a1263/"><img className="contact" src="/linkedin.jpeg" height="30px" width="30px"/></a>
             </LINKEDIN>
             <GITHUB>
-            <a className="contact" href="https://github.com/DylanRhodes098"><img className="contact" src="../public/gitHub.jpeg" height="30px" width="30px"/></a>
+            <a className="contact" href="https://github.com/DylanRhodes098"><img className="contact" src="/gitHub.jpeg" height="30px" width="30px"/></a>
             </GITHUB>
         </SOCIALSWRAP>
         </MAINWRAP>
