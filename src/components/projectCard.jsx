@@ -16,16 +16,16 @@ const ProjectCards = (props) => {
         <>
         
         <CARDBORDER>
-        <div className="image">
-        <img src={props.img} alt="Project image here"/>
-        </div>
+        <img className="projectImages" src={props.img} alt="Project image here"/>
         <div className="projectText">
-            <h1>{props.title}</h1>
-            <p>{props.description}</p>
+            <h1 className="projectTitle">{props.title}</h1>
+            <p className="projectDescription">{props.description}</p>
         </div>
-        <div className="buttonClick">
-            <button>{props.codeurl}</button>
-            <button>{props.projecturl}</button>
+        <div>
+        <a href={props.codeurl} target="_blank" rel="noopener noreferrer">
+        <button>View Code</button></a>
+        <a href={props.projecturl} target="_blank" rel="noopener noreferrer">
+        <button>View Project</button></a>
         </div>
         </CARDBORDER>
         

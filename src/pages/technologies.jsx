@@ -11,7 +11,15 @@ const TECHNOLOGIESBODY = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:space-around;
-padding:20px;`
+padding:20px;
+
+@media (max-width: 768px) {
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+padding:10px;
+}
+`
 
 
 const Technologies = () => {
@@ -20,11 +28,11 @@ const Technologies = () => {
     <WRAPPER>
     <div classname="technologiesHeader">
         <h1>Technologies</h1>
-        <p>I've worked with a range of technologies in the web development world</p>
+        <p>I've worked with a range of technologies in the web development world...</p>
         </div>
         <TECHNOLOGIESBODY>
             <div className="LANGUAGES">
-            <h2>Frontend</h2>
+            <h1 className="projectTitle">Frontend</h1>
         <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -32,7 +40,7 @@ const Technologies = () => {
         </ul>
         </div>
         <div className="LANGUAGES">
-            <h2>Backend</h2>
+            <h1 className="projectTitle">Backend</h1>
         <ul>
         <li>MySQL</li>
         <li>Node</li>
@@ -40,7 +48,7 @@ const Technologies = () => {
         </ul>
         </div>
         <div className="LANGUAGES">
-            <h2>Tools</h2>
+            <h1 className="projectTitle">Tools</h1>
         <ul>
         <li>Postman</li>
         <li>APIs</li>

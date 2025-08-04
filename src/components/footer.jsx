@@ -4,6 +4,7 @@ const MAINWRAP = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:space-around;
+margin-
 `
 const CONTACTSWRAP = styled.div`
 display:flex;
@@ -37,19 +38,19 @@ const Footer = () => {
         <CONTACTSWRAP>
                 <EMAIL>
                 <p>Email:</p>
-                <a href mailto="dylanrhodes098@gmail.com">dylanrhodes098@gmail.com</a>
+                <a className="contact" href="mailto:dylanrhodes098@gmail.com">dylanrhodes098@gmail.com</a>
                 </EMAIL>
                 <PHONE>
                 <p>Phone:</p>
-                <a href mobile="07714589120">07714589120</a>
+                <a className="contact" href="tel:07714589120">07714589120</a>
                 </PHONE>
             </CONTACTSWRAP>
             <SOCIALSWRAP>
             <LINKEDIN>
-                <img src="#" alt="link"/>
+                <a className="contact" href="https://www.linkedin.com/in/dylan-rhodes-58a8a1263/"><img className="contact" src="../public/linkedin.jpeg" height="30px" width="30px"/></a>
             </LINKEDIN>
             <GITHUB>
-                <img src="#" alt="git"/>
+            <a className="contact" href="https://github.com/DylanRhodes098"><img className="contact" src="../public/gitHub.jpeg" height="30px" width="30px"/></a>
             </GITHUB>
         </SOCIALSWRAP>
         </MAINWRAP>

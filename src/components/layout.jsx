@@ -4,7 +4,6 @@ import GlobalStyle from '../styles/globalStyles';
 
 const MainWrapper = styled.main`
   padding: 20px;
-
 `;
 
 const WRAPNAV = styled.nav `
@@ -14,6 +13,7 @@ const WRAPNAV = styled.nav `
   align-items:center;
   gap:40px;
   cursor:pointer;
+  }
 `;
 
 const pages = [
@@ -32,7 +32,7 @@ const Layout = ({ children, chosenPage, choosePage }) => {
 const selectPage = () => {
   return pages.map((page) => {
     return (
-      <p key={page.key} 
+      <p className="nav" key={page.key} 
       onClick={() => choosePage(page.key)}
       >{page.value}</p>
   )})

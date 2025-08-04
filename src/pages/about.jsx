@@ -4,11 +4,10 @@ const WRAPPER = styled.section `
   max-width: 70%;
   margin: 0 auto;
   padding: 0 auto;
-  margin-bottom: 50px;
 `;
 
 const ABOUTHEADER = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 `;
 
 const WRAPABOUT = styled.div`
@@ -19,7 +18,7 @@ const WRAPABOUT = styled.div`
   align-items: space-between;
   gap: 40px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
   grid-template-columns:auto;
   grid-template-rows: 1fr 1fr;
 }
@@ -30,17 +29,8 @@ const ABOUTBODY = styled.div`
 `;
 
 const HeadShot = styled.div`
-  width: 200px;
+  width: 300px;
   height: 100px;
-  border: solid;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-    @media (max-width: 768px) {
-  width: 400px;
-  height: 200px;
 `;
 
 const About = () => {
@@ -52,19 +42,23 @@ const About = () => {
         <p>
           I strive to create software with <br></br> the user in mind using cutting-edge technologies, <br></br>innovating, and crafting elegant user experiences.
         </p>
-        <button>Click Me</button>
+        <a href="../public/softwarecv.pdf" target="_blank" rel="noopener noreferrer">
+        <button>CV</button></a>
       </ABOUTHEADER>
 
       <WRAPABOUT>
         <ABOUTBODY>
           <h1>About Me</h1>
           <p>
-            A Business Marketing and Management graduate with a strong background in personal training. I’m eager to contribute to a high-growth startup and learn how a company really operates from the inside.
+          A full-stack developer with a bachelor’s degree in Business Marketing and Management.
+          Passionate about building and delivering effective digital solutions, my skills focus on
+          Javascript and Python, also proficient in HTML and CSS. Complimented with expertise in
+          Git/GitHub, React, navigating REST API’s and experience with Databases using SQL.
           </p>
         </ABOUTBODY>
 
         <HeadShot>
-          <p>👤</p>
+        <img className="aboutImage" src="../public/portfolioImg.jpeg" alt="Project image here"/>
         </HeadShot>
       </WRAPABOUT>
       </WRAPPER>
