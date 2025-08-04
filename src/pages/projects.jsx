@@ -12,14 +12,14 @@ const WRAPPER = styled.section `
 
 const CARDWRAP = styled.div`
 display:grid;
-grid-template-columns:500px 500px;
+grid-template-columns:60% 60%;
 grid-template-rows: auto;
 align-items:center;
 justify-content:center;
 gap:20px;
 
 @media (max-width: 768px) {
-grid-template-columns: 500px;
+grid-template-columns: 110%;
 }
 `
 
