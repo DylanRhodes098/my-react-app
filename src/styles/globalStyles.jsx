@@ -84,6 +84,12 @@ border:solid;
 border-color:var(--secondary-color;);
 object-fit:contain;
 width:100%;
+};
+
+.projectsHeader {
+display:flex;
+flex-direction:row;
+justify-content:space-between;
 }`;
 
 export default GlobalStyle;
