@@ -15,12 +15,12 @@ font-weight:100;
 }
 
 h1 {
-font-size:50px;
+font-size:350%;
 font-weight:100;
 }
 
 p {
-font-size:25px;
+font-size:175%;
 font-weight:100;
 }
 
@@ -48,11 +48,11 @@ border-radius:5px;
 };
 
 .projectDescription {
-font-size:20px;
+font-size:140%;
 };
 
 .projectTitle {
-font-size:35px;
+font-size:245%;
 };
 
 .contact {
