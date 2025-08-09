@@ -1,70 +1,60 @@
-import styled from 'styled-components';
+import styled from "styled-components"
+import Technologies from "../components/technologies";
 
-const WRAPPER = styled.section `
+// - - - BODY - - - //
+// - - - WRAPPING - - - //
+const Wrapper = styled.main`
   max-width: 70%;
   margin: 0 auto;
   padding: 0 auto;
 `;
 
-const ABOUTHEADER = styled.div`
-  margin-bottom: 20px;
-`;
-
-const WRAPABOUT = styled.div`
-  display: grid;
-  grid-template-columns:1fr auto;
-  grid-template-rows: auto;
+// - - - ABOUT - - - //
+// - - - WRAPPING - - - //
+const AboutWrap = styled.section`
+  display: flex;
+  flex-direction:rows;
   justify-content: space-between;
   align-items: space-between;
   gap: 40px;
+  margin-bottom:25%;
 
-  @media (max-width: 1100px) {
-  grid-template-columns:auto;
-  grid-template-rows: 1fr 1fr;
+  @media (max-width: 1000px) {
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:40%;
+  text-align:center;
 }
 `;
 
-const ABOUTBODY = styled.div`
- 
-`;
-
-const HeadShot = styled.div`
-  width: 300px;
-  height: 100px;
-`;
-
 const About = () => {
-  return (
+    return (
     <>
-    <WRAPPER>
-      <ABOUTHEADER>
-        <h1>Dylan Rhodes' Portfolio</h1>
+    {/* Wrap body */}
+    <Wrapper>
+        <h1 className="aboutText">About Me</h1>
+        <h3 className="aboutText">I'm Dylan Rhodes, a Full-Stack<br></br> developer based in Essex.</h3>
+        {/* Wrap about content */}
+        <AboutWrap>
+          <div className="aboutText">
         <p>
-          I strive to create software with <br></br> the user in mind using cutting-edge technologies, <br></br>innovating, and crafting elegant user experiences.
+        I graduated from a full-stack development cohort in 2025, achieving a level 4 BSC, which has provided a solid foundation in website, application and database development. My passion for  development has driven me to master a wide range of creative tools and software. Currently early on my journey, I am constantly learning and developing my skillset in designing websites and applications and building efficient software tools for businesses and retailers in Essex and the UK.<br></br><br></br> 
+With a background that blends both technical and creative disciplines, I bring a unique perspective to every project, enabling me to communicate effectively with clients, developers, and stakeholders alike. I'm comfortable bridging the gap between design and development, ensuring ideas are both visually compelling and technically sound.<br></br><br></br>
+Outside of work, I’m a bookworm, fitness enthusiast and dedicated foodie. I love to explore reads involving psychology, philosophy or entrepreneurship - favourites being Homo Deus and Behave.
+
         </p>
-        <a href="/softwarecv.pdf" target="_blank" rel="noopener noreferrer">
-        <button>CV</button></a>
-      </ABOUTHEADER>
-
-      <WRAPABOUT>
-        <ABOUTBODY>
-          <h1>About Me</h1>
-          <p>
-          A full-stack developer with a bachelor’s degree in Business Marketing and Management.
-          Passionate about building and delivering effective digital solutions, my skills focus on
-          Javascript and Python, also proficient in HTML and CSS. Complimented with expertise in
-          Git/GitHub, React, navigating REST API’s and experience with Databases using SQL.
-          </p>
-        </ABOUTBODY>
-
-        <HeadShot>
+        </div>
+        <div>
         <img className="aboutImage" src="/portfolioImg.jpeg" alt="Project image here"/>
-        </HeadShot>
-      </WRAPABOUT>
-      </WRAPPER>
-     
-    </>
-  );
-};
+        </div>
+        </AboutWrap>
+        </Wrapper>
 
+        {/* Inject technologies component*/}
+    <Technologies></Technologies>
+  
+    </>
+        )
+}
 export default About;

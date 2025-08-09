@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
-const CARDBORDER = styled.div`
+// - - - BODY - - - //
+// - - - WRAPPING - - - //
+const Wrapper = styled.div`
 border:solid;
 border-radius:10px;
 padding:10px;
@@ -14,20 +16,22 @@ justify-content:flex-start;
 const ProjectCards = (props) => {
     return (
         <>
-        
-        <CARDBORDER>
+        {/* Wrap body */}
+        <Wrapper>
         <img className="projectImages" src={props.img} alt="Project image here"/>
-        <div className="projectText">
-            <h1 className="projectTitle">{props.title}</h1>
-            <p className="projectDescription">{props.description}</p>
+        {/* Wrap text */}
+        <div>
+            <h1 className="projectHeader">{props.title}</h1>
+            <p>{props.description}</p>
         </div>
+        {/* Wrap buttons */}
         <div>
         <a href={props.codeurl} target="_blank" rel="noopener noreferrer">
         <button>View Code</button></a>
         <a href={props.projecturl} target="_blank" rel="noopener noreferrer">
         <button>View Project</button></a>
         </div>
-        </CARDBORDER>
+        </Wrapper>
         
         </>
     )

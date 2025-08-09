@@ -3,14 +3,24 @@ import styled from "styled-components";
 import ProjectCards from '../components/projectCard';
 import ProjectObject from '../data/projectObject';
 
-const WRAPPER = styled.section `
+// - - - BODY - - - //
+// - - - WRAPPING - - - //
+const Wrapper = styled.main `
   max-width: 70%;
   margin: 0 auto;
   padding: 0 auto;
   margin-bottom: 50px;
 `;
 
-const CARDWRAP = styled.div`
+// - - - PROJECTS - - - //
+// - - - WRAPPING - - - //
+const ProjectsHeaderWrap = styled.section`
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  }`
+  
+  const ProjectsBodyWrap = styled.div`
 display:grid;
 grid-template-columns:60% 60%;
 grid-template-rows: auto;
@@ -24,33 +34,36 @@ grid-template-columns: 110%;
 `
 
 const Projects = () => {
-
+// - - - Define usestate tools - - - //
     const [projectList, setProjectList] = useState(ProjectObject);
     const [originalList, newProjectList] = useState(ProjectObject);
 
+    // - - - Define sort button funciton - - - //
     const onSort = (sortType) => {
         const sorted = [...projectList].sort((a, b) => a[sortType].localeCompare(b[sortType]));
         setProjectList(sorted);
       };
-    
+    // - - - Define reset filter function - - - //
       const resetFilters = () => {
         setProjectList(originalList);
       };
 
     return ( 
     <> 
-    <WRAPPER>
-  
-        <div className = "projectsHeader">
+    {/* Wrap body */}
+    <Wrapper>
+       {/* Wrap project header */}
+        <ProjectsHeaderWrap>
             <h1>Projects</h1>
-            </div>
+            </ProjectsHeaderWrap>
             <div>
+               {/* inject filter functions */}
             <button onClick={() => onSort('title')}>Sort by Title</button>
             <button onClick={resetFilters}>Reset</button>
         </div>
-      
-        <CARDWRAP>
-     
+        {/* Wrap project content */}
+        <ProjectsBodyWrap>
+           {/* Inject use state tools */}
   {projectList.map((project, index) => (
     <ProjectCards
       key={index}
@@ -61,8 +74,8 @@ const Projects = () => {
       codeurl={project.codeurl}
     />
   ))}
-        </CARDWRAP>
-    </WRAPPER>
+        </ProjectsBodyWrap>
+    </Wrapper>
     </>
         )
 }

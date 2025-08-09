@@ -35,10 +35,6 @@ const ProjectObject = [{
     projecturl:"",
     codeurl:"https://github.com/DylanRhodes098/multipage-website.git",
 }
-
-
-
-
 ];
 
 export default ProjectObject;
