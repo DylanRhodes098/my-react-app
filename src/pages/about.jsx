@@ -42,7 +42,6 @@ const About = () => {
         I graduated from a full-stack development cohort in 2025, achieving a level 4 BSC, which has provided a solid foundation in website, application and database development. My passion for  development has driven me to master a wide range of creative tools and software. Currently early on my journey, I am constantly learning and developing my skillset in designing websites and applications and building efficient software tools for businesses and retailers in Essex and the UK.<br></br><br></br> 
 With a background that blends both technical and creative disciplines, I bring a unique perspective to every project, enabling me to communicate effectively with clients, developers, and stakeholders alike. I'm comfortable bridging the gap between design and development, ensuring ideas are both visually compelling and technically sound.<br></br><br></br>
 Outside of work, I’m a bookworm, fitness enthusiast and dedicated foodie. I love to explore reads involving psychology, philosophy or entrepreneurship - favourites being Homo Deus and Behave.
-
         </p>
         </div>
         <div>
