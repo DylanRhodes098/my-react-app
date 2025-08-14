@@ -43,12 +43,10 @@ const Home = () => {
         <HeaderWrap>
           <div className="homeText">
         <p>
-        A recently qualified full-stack developer currently building websites for local businesses and retailers. <br></br><br></br>
+        A recently qualified full-stack developer with a passion for building websites and applications.<br></br><br></br>
 With a keen eye for detail and a diverse skill set, I bring a unique and versatile approach to every project.<br></br><br></br>
 I’m passionate about blending creativity and technical precision to craft bold and dynamic websites and applications.  
         </p>
-        <a href="/softwarecv.pdf">
-        <button>My CV</button></a>
         </div>
         <div>
         <img className="homeImage" src="/portfolioImg.jpeg" alt="Project image here"/>
